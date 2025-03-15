@@ -1,0 +1,7 @@
+package com.userRegister.fullstack_backend.exception;
+
+public class UserNotFoundException extends RuntimeException{
+    public UserNotFoundException(Long id){
+        super("Could not found user in id "+id);
+    }
+}
